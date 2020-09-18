@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 // @TODO actions to controller
-Route::view('/', 'messages.index');
+Route::view('/', 'messages.index')->name('messages.index');
+Route::view('create', 'messages.create')->name('messages.create');
