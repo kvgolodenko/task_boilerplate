@@ -29,8 +29,6 @@ class MessageController
         //@TODO Save recipients
 
         //@TODO Save body as file
-
-        return view('message.create');
     }
 
     public function send()
