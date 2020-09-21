@@ -30,6 +30,9 @@
             <li class="nav-item active">
                 <a class="nav-link" href="{{ route('messages.index') }}">Messages <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ route('messages.create') }}">Create <span class="sr-only">(current)</span></a>
+            </li>
         </ul>
     </div>
 </nav>
