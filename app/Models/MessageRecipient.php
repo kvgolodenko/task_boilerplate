@@ -46,11 +46,10 @@ class MessageRecipient extends Model
 
     /**
      * Return related recipient.
-     * @return MorphTo
+     * @return
      */
     public function recipient()
     {
         // @TODO Return related morph model Staff, Student or Teacher
-      //  return $this->morphTo();
     }
 }

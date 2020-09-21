@@ -31,11 +31,10 @@ class Message extends Model
 
     /**
      * Return related recipients
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return
      */
     public function recipients()
     {
         // @TODO Return related many recipients
-      //  return $this->hasMany(MessageRecipient::class);
     }
 }

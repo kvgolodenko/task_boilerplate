@@ -15,12 +15,10 @@ class CreateMessageRecipientsTable extends Migration
     {
         Schema::create('message_recipients', function (Blueprint $table) {
             $table->id();
-           // $table->unsignedBigInteger('message_id'); // @TODO Add Foreign key to messages table
+            // @TODO Add Foreign key to messages table `message_id`
             $table->morphs('recipient');
             $table->string('email');
             $table->timestamps();
-
-         //   $table->foreign('message_id')->references('id')->on('messages')->onDelete('cascade');
         });
     }
 

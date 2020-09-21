@@ -4,24 +4,24 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\Message;
-
 class MessageController
 {
     public function index()
     {
         //@TODO Load all the message with recipients count
 
-        return view('message.index');
+        // @TODO Display data on index page using blade
     }
 
-    public function create(){
+    public function create()
+    {
 
-        return view('message.create');
+        // @TODO return create view
     }
 
-    public function store(){
-        // @TODO validation
+    public function store()
+    {
+        // @TODO validation using request class
 
         //@TODO Save the model
 
@@ -30,5 +30,14 @@ class MessageController
         //@TODO Save body as file
 
         return view('message.create');
+    }
+
+    public function send()
+    {
+        // @TODO Send the message
+
+        // @TODO Push email to queue
+
+        // @TODO Redirect back to index
     }
 }
