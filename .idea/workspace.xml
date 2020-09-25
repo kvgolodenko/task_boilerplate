@@ -20,23 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="519da0b9-1b07-4bf9-9de8-e442c77bafdf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/MessageRecipient.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MessageRecipient.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Traits/Messegeable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Traits/Messegeable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/messages/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/messages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -198,7 +195,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600759678084</updated>
-      <workItem from="1600759679626" duration="55129000" />
+      <workItem from="1600759679626" duration="61786000" />
+      <workItem from="1601027452589" duration="3841000" />
     </task>
     <servers />
   </component>
@@ -215,6 +213,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="378" y="146" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600941725181">
@@ -234,10 +233,10 @@
       <screen x="0" y="23" width="1280" height="728" />
     </state>
     <state x="100" y="123" width="1080" height="522" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1280.728@0.23.1280.728" timestamp="1601018453825" />
-    <state x="341" y="139" width="598" height="491" key="find.popup" timestamp="1600967385044">
-      <screen x="0" y="23" width="1280" height="728" />
+    <state x="341" y="139" width="598" height="490" key="find.popup" timestamp="1601031011111">
+      <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state x="341" y="139" width="598" height="490" key="find.popup/0.23.1280.727@0.23.1280.727" timestamp="1600867434800" />
+    <state x="341" y="139" width="598" height="490" key="find.popup/0.23.1280.727@0.23.1280.727" timestamp="1601031011111" />
     <state x="341" y="139" width="598" height="491" key="find.popup/0.23.1280.728@0.23.1280.728" timestamp="1600967385044" />
   </component>
 </project>

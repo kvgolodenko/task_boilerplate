@@ -17,6 +17,7 @@ use Illuminate\Database\Eloquent\Relations\MorphToMany;
  */
 trait Messegeable
 {
+    protected $modelName = self::class;
     /**
      * Return related recipients.
      * @return MorphMany

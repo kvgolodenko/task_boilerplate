@@ -34,7 +34,7 @@ class MessageRecipient extends Model
 {
     use HasFactory;
 
-
+    protected $fillable = ['recipient_id', 'email', 'recipient_type'];
     /**
      * Return related message
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -51,5 +51,6 @@ class MessageRecipient extends Model
     public function recipient()
     {
         // @TODO Return related morph model Staff, Student or Teacher
+        return $this->morphTo();
     }
 }

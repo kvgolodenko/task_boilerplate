@@ -6,7 +6,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Message;
 use App\Models\MessageRecipient;
-use App\Models\Staff;
 use App\Models\Student;
 use App\Models\Traits\Messegeable;
 use Illuminate\Database\Eloquent\Collection;
@@ -24,6 +23,7 @@ class MessageController
 
         // @TODO Display data on index page using blade
         $messages = Message::all();
+
         return view('messages.index', ['messages' => $messages]);
     }
 
@@ -32,8 +32,8 @@ class MessageController
         //@TODO Collect all messageable data from database and show in <select>
 
         // @TODO return create view
+
         $users = $this->getUsers();
-        /** @var Collection $user */
         return view('messages.create',['users' => $users]);
     }
 
@@ -47,8 +47,9 @@ class MessageController
 
         //@TODO Save body as file
 
+
         $isValid = $this->validate($request, [
-            'user-select' => 'required',
+            'user_select' => 'required',
             'subject' => 'required|max:255',
             'body' => 'required'
         ]);
@@ -59,7 +60,18 @@ class MessageController
             $message->body = $request->input('body');
             $message->save();
 
-            $recipients = new MessageRecipient();
+            $selected = $request->input('user_select');
+            foreach ($selected as $item) {
+                $itemArr = explode(',',$item);
+                $recipient = new MessageRecipient([
+                    'recipient_id' => $itemArr[0],
+                    'email' => $itemArr[1],
+                    'recipient_type' => $itemArr[2]
+                ]);
+                $message->recipients()->save($recipient);
+            }
+
+
         }
 
         return redirect('/');

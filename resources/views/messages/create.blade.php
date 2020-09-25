@@ -16,7 +16,7 @@
                             @foreach($users as $key => $collection)
                                 <optgroup label="{{$key}}">
                                 @foreach($collection as $user)
-                                    <option value="{{$user}}">{{$user->firstname.' '.$user->lastname}}</option>
+                                    <option value="{{$user->id .','.$user->email .','. $collection->getQueueableClass()}}">{{$user->firstname.' '.$user->lastname}}</option>
                                 @endforeach
                             @endforeach
                         </select>

@@ -8,10 +8,8 @@ use App\Models\Staff;
 use App\Models\Student;
 use App\Models\Teacher;
 use App\Models\Traits\Messegeable;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 
 class UserController
