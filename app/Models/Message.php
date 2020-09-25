@@ -36,5 +36,6 @@ class Message extends Model
     public function recipients()
     {
         // @TODO Return related many recipients
+        return $this->hasMany(MessageRecipient::class,'message_id','id');
     }
 }

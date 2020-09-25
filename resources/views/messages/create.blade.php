@@ -12,10 +12,13 @@
                     {{ csrf_field() }}
                     <div class="form-group">
                         <label for="formGroupExampleInput">Select recipients</label>
-                        <select class="custom-select" multiple>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                        <select class="custom-select" name="user_select[]"multiple>
+                            @foreach($users as $key => $collection)
+                                <optgroup label="{{$key}}">
+                                @foreach($collection as $user)
+                                    <option value="{{$user}}">{{$user->firstname.' '.$user->lastname}}</option>
+                                @endforeach
+                            @endforeach
                         </select>
                     </div>
                     <div class="form-group">

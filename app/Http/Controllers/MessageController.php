@@ -5,12 +5,18 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Message;
+use App\Models\MessageRecipient;
+use App\Models\Staff;
+use App\Models\Student;
+use App\Models\Traits\Messegeable;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 
 class MessageController
 {
     use ValidatesRequests;
+    use Messegeable;
 
     public function index()
     {
@@ -26,6 +32,9 @@ class MessageController
         //@TODO Collect all messageable data from database and show in <select>
 
         // @TODO return create view
+        $users = $this->getUsers();
+        /** @var Collection $user */
+        return view('messages.create',['users' => $users]);
     }
 
     public function store(Request $request)
@@ -38,9 +47,8 @@ class MessageController
 
         //@TODO Save body as file
 
-
-
         $isValid = $this->validate($request, [
+            'user-select' => 'required',
             'subject' => 'required|max:255',
             'body' => 'required'
         ]);
@@ -50,6 +58,8 @@ class MessageController
             $message->subject = $request->input('subject');
             $message->body = $request->input('body');
             $message->save();
+
+            $recipients = new MessageRecipient();
         }
 
         return redirect('/');

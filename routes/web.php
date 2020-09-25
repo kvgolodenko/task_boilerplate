@@ -15,8 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 // @TODO actions to controller
 Route::view('/', 'messages.index')->name('messages.index');
-Route::get('/', 'App\Http\Controllers\MessageController@index')->name('messages.index');
-Route::view('create', 'messages.create')->name('messages.create');
 Route::view('user/create', 'user.create')->name('user.create');
+
+//GET routes
+Route::get('/', 'App\Http\Controllers\MessageController@index')->name('messages.index');
+Route::get('create', 'App\Http\Controllers\MessageController@create')->name('messages.create');
+Route::get('users', 'App\Http\Controllers\UserController@getAllUsers')->name('users');
+
+//POST routes
 Route::post('user/store', 'App\Http\Controllers\UserController@store')->name('user.store');
 Route::post('message/store','App\Http\Controllers\MessageController@store')->name('message.store');

@@ -4,18 +4,18 @@
     <tr>
         <th scope="col">#</th>
         <th scope="col"><?= __('Title') ?></th>
-        <th scope="col"><?= __('Recepients count')?></th>
+        <th scope="col"><?= __('Recipients count')?></th>
         <th scope="col"><?= __('Sent')?></th>
         <th scope="col"><?= __('Actions')?></th>
     </tr>
     </thead>
     <tbody>
-        @foreach ($messages as $message)
+        @foreach ($messages as $key => $message)
           <tr>
-              <th></th>
+              <th>{{$key+1}}</th>
               <th>{{$message->subject}}</th>
-              <th>{{$message->body}}</th>
-              <th>{{$message->sent ? 'true' : 'false'}}</th>
+              <th>{{count($message->recipients)}}</th>
+              <th>{{$message->sent ? 'yes' : 'no'}}</th>
               <th>
                   <a href="#" class="btn btn-success" >Edit</a>
                   <a href="#" class="btn btn-danger">Delete</a>

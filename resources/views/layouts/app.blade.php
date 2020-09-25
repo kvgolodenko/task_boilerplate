@@ -35,7 +35,10 @@
                 <a class="nav-link" href="{{ route('messages.create') }}">Create message<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="{{ route('user.create') }}">Create person<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ route('users') }}">Users<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ route('user.create') }}">Create user<span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>

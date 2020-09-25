@@ -7,13 +7,17 @@ namespace App\Http\Controllers;
 use App\Models\Staff;
 use App\Models\Student;
 use App\Models\Teacher;
+use App\Models\Traits\Messegeable;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 
 class UserController
 {
     use ValidatesRequests;
+    use Messegeable;
 
     public const TYPE_STUDENT = 1;
     public const TYPE_TEACHER = 2;
@@ -41,8 +45,18 @@ class UserController
                     $model = new Staff();
                     break;
             }
-            var_dump($model);
-//            return redirect('/users');
+           $model->firstname = $request->input('firstname');
+           $model->lastname = $request->input('lastname');
+           $model->email = $request->input('email');
+           $model->save();
+
+           return redirect('/users');
         }
+    }
+
+    public function getAllUsers()
+    {
+        $users = $this->getUsers();
+        return view('user.index', ['users' => $users]);
     }
 }
