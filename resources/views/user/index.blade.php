@@ -11,8 +11,7 @@
     </thead>
     <tbody>
     <?php $i = 1 ?>
-    @foreach($users as $collection)
-    @foreach($collection as $user)
+    @foreach($users as $user)
         <tr>
             <th>{{$i++}}</th>
             <th>{{$user->firstname}}</th>
@@ -20,7 +19,6 @@
             <th>{{$user->email}}</th>
             <th>{{$user->getTable()}}</th>
         </tr>
-    @endforeach
     @endforeach
     </tbody>
 </table>

@@ -52,9 +52,10 @@ class UserController
         }
     }
 
-    public function getAllUsers()
+    public function users()
     {
         $users = $this->getUsers();
         return view('user.index', ['users' => $users]);
     }
+
 }

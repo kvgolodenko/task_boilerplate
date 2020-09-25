@@ -43,7 +43,7 @@ trait Messegeable
         $students = Student::all();
         $staff = Staff::all();
         $teachers = Teacher::all();
-        return collect(['students' => $students, 'teachers' => $teachers, 'staff' => $staff]);
-    }
 
+        return collect(['students' => $students, 'teachers' => $teachers, 'staff' => $staff])->collapse();
+    }
 }

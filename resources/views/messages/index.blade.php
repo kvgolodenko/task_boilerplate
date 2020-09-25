@@ -17,9 +17,9 @@
               <th>{{count($message->recipients)}}</th>
               <th>{{$message->sent ? 'yes' : 'no'}}</th>
               <th>
-                  <a href="#" class="btn btn-success" >Edit</a>
-                  <a href="#" class="btn btn-danger">Delete</a>
-                  <a href="#" class="btn btn-primary">Send</a></th>
+                  <a href="/edit/{{$message->id}}" class="btn btn-success" >Edit</a>
+                  <a href="/delete/{{$message->id}}" class="btn btn-danger">Delete</a>
+                  <a href="/send/{{$message->id}}" class="btn btn-primary">Send</a></th>
           </tr>
         @endforeach
     </tbody>

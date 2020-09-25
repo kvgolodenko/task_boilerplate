@@ -20,13 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="519da0b9-1b07-4bf9-9de8-e442c77bafdf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Usermail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/mail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/task_boilerplate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/task_boilerplate.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MessageRecipient.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MessageRecipient.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Traits/Messegeable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Traits/Messegeable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/messages/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/messages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +170,7 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/predis/predis" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hrCA0kqPc3NprIFPU7gr03dDJ9" />
@@ -196,7 +209,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600759678084</updated>
       <workItem from="1600759679626" duration="61786000" />
-      <workItem from="1601027452589" duration="3841000" />
+      <workItem from="1601027452589" duration="23319000" />
     </task>
     <servers />
   </component>
@@ -216,14 +229,19 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="441" y="61" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601052524299">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="441" y="61" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.726@0.23.1280.726" timestamp="1601052524299" />
     <state x="378" y="146" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600941725181">
       <screen x="0" y="23" width="1280" height="728" />
     </state>
     <state x="378" y="146" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.727@0.23.1280.727" timestamp="1600866125937" />
     <state x="378" y="146" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.728@0.23.1280.728" timestamp="1600941725181" />
-    <state x="306" y="117" key="NewPhpClassDialog" timestamp="1600862668950">
-      <screen x="0" y="23" width="1280" height="727" />
+    <state x="306" y="117" key="NewPhpClassDialog" timestamp="1601052292182">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
+    <state x="306" y="117" key="NewPhpClassDialog/0.23.1280.726@0.23.1280.726" timestamp="1601052292182" />
     <state x="306" y="117" key="NewPhpClassDialog/0.23.1280.727@0.23.1280.727" timestamp="1600862668950" />
     <state x="459" y="314" key="NewPhpFileDialog" timestamp="1600928314716">
       <screen x="0" y="23" width="1280" height="728" />
@@ -233,9 +251,10 @@
       <screen x="0" y="23" width="1280" height="728" />
     </state>
     <state x="100" y="123" width="1080" height="522" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1280.728@0.23.1280.728" timestamp="1601018453825" />
-    <state x="341" y="139" width="598" height="490" key="find.popup" timestamp="1601031011111">
-      <screen x="0" y="23" width="1280" height="727" />
+    <state x="341" y="139" width="598" height="490" key="find.popup" timestamp="1601051929930">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
+    <state x="341" y="139" width="598" height="490" key="find.popup/0.23.1280.726@0.23.1280.726" timestamp="1601051929930" />
     <state x="341" y="139" width="598" height="490" key="find.popup/0.23.1280.727@0.23.1280.727" timestamp="1601031011111" />
     <state x="341" y="139" width="598" height="491" key="find.popup/0.23.1280.728@0.23.1280.728" timestamp="1600967385044" />
   </component>
